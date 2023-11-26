@@ -1,0 +1,1 @@
+{'.experiments/exp4.yml': {'IsSuccess': True, 'ChosenParams': {'r': 4, 'c': 1, 'f': 1, 'K': 22, 'Bp': {'bbr_beta': 0.7125053725549938, 'bbr_losstresh': 0.05, 'bbr_probe_rtt_cwnd_gain': 0.6622673212638741, 'bbr_probe_rtt_duration': 70.82810849940141}}}}

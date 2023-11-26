@@ -1,0 +1,1 @@
+{'.experiments/exp4.yml': {'IsSuccess': True, 'ChosenParams': {'r': 1, 'c': 2, 'f': 4, 'K': 10, 'Bp': None}}}

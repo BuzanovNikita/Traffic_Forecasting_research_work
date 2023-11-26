@@ -1,0 +1,13 @@
+{additional_info: {bbr_beta: 0.9, bbr_loss_tresh: 0.05, bbr_probe_rtt_cwnd_gain: 0.9,
+    bbr_probe_rtt_duration: 100.0, channel_bw: 323, channel_congestion_control: bbr2,
+    channel_jitt: 1, channel_loss: 2.5, channel_rtt: 36, fec_algo: fec_dummy, fec_batch_size: 1,
+    fec_payload_size: 1024}, content: [{'bytes sent: ': 271040, 'mean cwnd: ': 14666.909091,
+      'mean jitter: ': 17.21875, 'mean loss2: ': 0.003277, 'mean loss3: ': 2.168675,
+      'mean loss4: ': 2.168675, 'mean loss: ': 0.284091, 'mean s_rtt: ': 49.46875,
+      time: 0.0-1.0}, {'bytes sent: ': 503697, 'mean cwnd: ': 53175.195652, 'mean jitter: ': 0.133333,
+      'mean loss2: ': 0.004757, 'mean loss: ': 0.677777, 'mean s_rtt: ': 36.211111,
+      time: 1.0-2.0}, {'bytes sent: ': 264930, 'mean cwnd: ': 13026.875, 'mean jitter: ': 0.0,
+      'mean loss2: ': 0.957132, 'mean loss: ': 1.931818, 'mean s_rtt: ': 36.0, time: 2.0-3.0},
+    {'bytes sent: ': 346555.666667, 'mean cwnd: ': 26956.326581, 'mean jitter: ': 5.784028,
+      'mean loss2: ': 0.321722, 'mean loss3: ': 2.168675, 'mean loss4: ': 2.168675,
+      'mean loss: ': 1.304798, 'mean s_rtt: ': 40.559954, time: global}]}

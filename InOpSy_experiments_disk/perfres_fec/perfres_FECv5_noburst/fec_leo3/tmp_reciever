@@ -1,0 +1,4 @@
+[{'bytes sent: ': 7525781, 'mean loss3: ': 0.586755, 'mean loss4: ': 0.471489, 'mean loss5: ': 0.586755,
+    'mean loss6: ': 0.540081, time: 0.0-1000.0}, {'bytes sent: ': 7525781, 'mean loss3: ': 0.586755,
+    'mean loss4: ': 0.471489, 'mean loss5: ': 0.586755, 'mean loss6: ': 0.540081,
+    time: global}]

@@ -1,0 +1,3 @@
+channel_rtt:20 channel_loss:5 channel_bw:40 channel_jitt:1 channel_congestion_control:bbr2 fec_algo:fec_leo fec_batch_size:1 fec_payload_size:1024 fec_leo_nrecovery:4 2<function curr_time_to_path at 0x7f9d5e9c95e0>exp_dur: 2.0
+channel_rtt:20 channel_loss:5 channel_bw:40 channel_jitt:1 channel_congestion_control:cubic fec_algo:fec_leo fec_batch_size:1 fec_payload_size:1024 fec_leo_nrecovery:4 4<function curr_time_to_path at 0x7f9d5e9c95e0>exp_dur: 2.0
+channel_rtt:20 channel_loss:4 channel_bw:40 channel_jitt:1 channel_congestion_control:reno fec_algo:fec_leo fec_batch_size:1 fec_payload_size:1024 fec_leo_nrecovery:4 12<function curr_time_to_path at 0x7f9d5e9c95e0>exp_dur: 2.0

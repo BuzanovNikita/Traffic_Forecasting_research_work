@@ -1,0 +1,12 @@
+{additional_info: {channel_bw: 40, channel_congestion_control: bbr2, channel_jitt: 1,
+    channel_loss: 5, channel_rtt: 20, fec_algo: fec_1pr, fec_batch_size: 90, fec_payload_size: 1024,
+    iperf_speed_mbit: '''sec'' is not in list'}, content: [{'bytes sent: ': 3846,
+      'mean cwnd: ': 13302.0, 'mean jitter: ': 26.5, 'mean loss2: ': 0.0, 'mean loss3: ': 2.287326,
+      'mean loss4: ': 2.287326, 'mean loss: ': 0.0, 'mean s_rtt: ': 51.0, time: 0.0-1.0},
+    {'bytes sent: ': 131408, 'mean cwnd: ': 13066.666667, 'mean jitter: ': 5.519231,
+      'mean loss2: ': 0.037598, 'mean loss: ': 8.03399, 'mean s_rtt: ': 24.653846,
+      time: 1.0-2.0}, {'bytes sent: ': 2136, 'mean cwnd: ': 0.0, 'mean jitter: ': 0.0,
+      'mean loss2: ': 0.0, 'mean loss: ': 0.0, 'mean s_rtt: ': 0.0, time: 2.0-3.0},
+    {'bytes sent: ': 45796.666667, 'mean cwnd: ': 8789.555556, 'mean jitter: ': 10.673077,
+      'mean loss2: ': 0.012533, 'mean loss3: ': 2.287326, 'mean loss4: ': 2.287326,
+      'mean loss: ': 4.016995, 'mean s_rtt: ': 25.217949, time: global}]}

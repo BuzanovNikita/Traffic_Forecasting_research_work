@@ -1,0 +1,1 @@
+channel_rtt:20 channel_loss:1 channel_bw:40 channel_jitt:1 channel_congestion_control:bbr2 fec_algo:fec_leo fec_batch_size:18 fec_payload_size:1024 fec_leo_nrecovery:2 92<function curr_time_to_path at 0x7f67d60e05e0>exp_dur: 5.0

@@ -1,0 +1,1 @@
+bbr_beta:0.708861730816281 bbr_loss_tresh:0.05 bbr_probe_rtt_cwnd_gain:0.6622673212638741 bbr_probe_rtt_duration:126.98199144833336 1612<function curr_time_to_path at 0x7f12349c3700>	Error is [Errno 2] No such file or directory: '../inopsy-agent/perf/perfres_w3_bbr_pe_v2/powell/1612_exp_Fri_Jul_28_05.40.12_2023'

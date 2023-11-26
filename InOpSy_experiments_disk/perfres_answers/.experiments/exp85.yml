@@ -1,0 +1,177 @@
+#supportingInformation:
+#  General: 
+    #For now, correct usage implies exactly 1 sdwan flow; multiple flow support in future stages;
+    #Units of measure:
+    #cost_price, cost_rent - conventional units;
+    #bw_mean, bw_max, bw   - mbits/sec;
+    #loss                  - percentage;
+    #jitter (sla)          - percentage of rtt;
+    #rate (sla)            - mbits/sec;
+    #time_start, time_stop - seconds from the start of the experiment;
+    #fillz_timeout         - seconds, timeout to fill current packet batch with zeroes (default 0.05)
+#  nLinks: 10
+#  durationDistribution: weibull
+#  timeStartDistribution: weibull
+#  backgroundDistribution: uniform
+
+
+Topo:
+    burstLoss: false
+    linkParams:
+    -   beta: 21
+        bw_max: 38
+        bw_mean: 22
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: pareto
+        jitter_max: 1ms
+        jitter_mean: 1ms
+        loss: 0.415
+        rtt_max: 99ms
+        rtt_mean: 98ms
+        rtt_min: 97ms
+        type: INTERNET
+    -   beta: 8
+        bw_max: 44
+        bw_mean: 15
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: pareto
+        jitter_max: 1ms
+        jitter_mean: 1ms
+        loss: 3.757
+        rtt_max: 56ms
+        rtt_mean: 55ms
+        rtt_min: 54ms
+        type: INTERNET
+    -   beta: 20
+        bw_max: 32
+        bw_mean: 21
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: normal
+        jitter_max: 2ms
+        jitter_mean: 1ms
+        loss: 0.011
+        rtt_max: 34ms
+        rtt_mean: 32ms
+        rtt_min: 30ms
+        type: MPLS
+    -   beta: 21
+        bw_max: 33
+        bw_mean: 22
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: normal
+        jitter_max: 2ms
+        jitter_mean: 1ms
+        loss: 0.788
+        rtt_max: 74ms
+        rtt_mean: 72ms
+        rtt_min: 70ms
+        type: INTERNET
+    -   beta: 6
+        bw_max: 43
+        bw_mean: 38
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: pareto
+        jitter_max: 5ms
+        jitter_mean: 2ms
+        loss: 3.484
+        rtt_max: 91ms
+        rtt_mean: 86ms
+        rtt_min: 81ms
+        type: INTERNET
+    -   beta: 21
+        bw_max: 27
+        bw_mean: 22
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: pareto
+        jitter_max: 2ms
+        jitter_mean: 1ms
+        loss: 0.015
+        rtt_max: 18ms
+        rtt_mean: 16ms
+        rtt_min: 14ms
+        type: MPLS
+    -   beta: 26
+        bw_max: 37
+        bw_mean: 27
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: pareto
+        jitter_max: 1ms
+        jitter_mean: 1ms
+        loss: 0.036
+        rtt_max: 26ms
+        rtt_mean: 25ms
+        rtt_min: 24ms
+        type: MPLS
+    -   beta: 5
+        bw_max: 35
+        bw_mean: 15
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: normal
+        jitter_max: 1ms
+        jitter_mean: 1ms
+        loss: 3.971
+        rtt_max: 98ms
+        rtt_mean: 97ms
+        rtt_min: 96ms
+        type: INTERNET
+    -   beta: 7
+        bw_max: 34
+        bw_mean: 13
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: normal
+        jitter_max: 5ms
+        jitter_mean: 2ms
+        loss: 3.978
+        rtt_max: 54ms
+        rtt_mean: 49ms
+        rtt_min: 44ms
+        type: INTERNET
+    -   beta: 20
+        bw_max: 50
+        bw_mean: 21
+        cost_price: 20
+        cost_rent: 20
+        jitter_distr: pareto
+        jitter_max: 5ms
+        jitter_mean: 2ms
+        loss: 0.034
+        rtt_max: 30ms
+        rtt_mean: 25ms
+        rtt_min: 20ms
+        type: MPLS
+
+
+sdwanGen:
+    flow0:
+        SLA:
+            bw: 24
+            correct_channels:
+            - 6
+            delay: 13ms
+            jitter: 5
+            loss: 0.04
+        rate: 19
+        time_start: 0.0
+        time_stop: 120.0
+        trafficClass: ThroughputSensitive
+
+
+transpAgentParams:
+    agent_path: ../inopsy-agent
+    cert_path: keys/mycert-cert.txt
+    fec_payload_size: 1024
+    fillz_timeout: 0.01
+    key_path: keys/mycert-key.txt
+    server_port: 1234
+
+
+backgroundGen: null
